@@ -42,8 +42,9 @@ do_install () {
 }
 
 PACKAGES = "${PN}-init ${PN}-hosts ${PN}-resolv-conf ${PN}-interfaces ${PN}"
-RDEPENDS_${PN} = "${PN}-init ${PN}-hosts ${PN}-resolv-conf ${PN}-interfaces"
+RDEPENDS_${PN} = "${PN}-init ${PN}-hosts ${PN}-resolv-conf network-interfaces"
 FILES_${PN}-init = "${sysconfdir}/init.d ${sysconfdir}/rc?.d"
 FILES_${PN}-hosts = "${sysconfdir}/hosts"
 FILES_${PN}-resolv-conf = "${sysconfdir}/resolv.conf"
 FILES_${PN}-interfaces = "${sysconfdir}/network/interfaces"
+PROVIDES_${PN}-interfaces = "network-interfaces"
