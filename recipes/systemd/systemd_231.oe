@@ -1,0 +1,3 @@
+require systemd.inc
+
+SRC_URI += "file://remove-lto.patch"
