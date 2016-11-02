@@ -1,0 +1,5 @@
+require libell.inc
+
+COMMIT = "branch=master"
+
+LIBRARY_VERSION = "0"
